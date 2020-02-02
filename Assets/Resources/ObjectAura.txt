@@ -1,0 +1,6 @@
+which is blood-stained;KARMA-;
+that glows brightly;KARMA+;
+, oft-mentioned in song,;STAMINA+;
+that is life draining;STAMINA-;
+which is spewing magical sparks;MONEY+;
+that is rusted;MONEY-;

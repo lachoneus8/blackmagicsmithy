@@ -1,0 +1,12 @@
+sword, the sword of your childhood hero;STAMINA+;
+woodcutter's axe;STAMINA+;
+suit of chainmail;STAMINA-;
+suit of plate mail;STAMINA-;
+wand of teleportation;MONEY+;
+warhammer. The King's warhammer;MONEY+;
+belt of lost pouches;MONEY-;
+commoner's hammer;MONEY-;
+wand of the fairy queen;KARMA+;
+paladin's greatsword;KARMA+;
+executioner's axe;KARMA-;
+reaper's bandolier;KARMA-;
