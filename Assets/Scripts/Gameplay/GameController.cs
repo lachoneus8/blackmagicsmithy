@@ -56,30 +56,63 @@ public class GameController : MonoBehaviour
 
         curCustomer = customerObject.GetComponent<Customer>();
         //randomize description
-        curCustomer.attributes[0] = adjectives[UnityEngine.Random.Range(0, adjectives.Count)];
-        curCustomer.attributes[1] = jobs[UnityEngine.Random.Range(0, jobs.Count)];
-        curCustomer.attributes[2] = personalities[UnityEngine.Random.Range(0, personalities.Count)];
+        curCustomer.attributes[0] = weightedRandom(adjectives);
+        curCustomer.attributes[1] = weightedRandom(jobs);
+        curCustomer.attributes[2] = weightedRandom(personalities);
         //randomize weapon/weapon description
-        int i = UnityEngine.Random.Range(0, auras.Count);
-        curCustomer.attributes[3] = auras[i];
-        Instantiate(renderers[i], curCustomer.particleParent.transform);
+        var selectedAtt = weightedRandom(auras);
+        curCustomer.attributes[3] = selectedAtt;
+        Instantiate(renderers[auras.IndexOf(selectedAtt)], curCustomer.particleParent.transform);
 
-        i = UnityEngine.Random.Range(0, weapons.Count);
-        curCustomer.attributes[4] = weapons[i];
-        curCustomer.weapon.sprite = weapons[i].Image;
+        var selectedImageAtt = weightedRandom(weapons);
+        curCustomer.attributes[4] = selectedImageAtt;
+        curCustomer.weapon.sprite = selectedImageAtt.Image;
 
         //appearance
-        i = UnityEngine.Random.Range(0, faces.Count);
-        curCustomer.attributes[5] = faces[i];
-        curCustomer.face.sprite = faces[i].Image;
+        selectedImageAtt = weightedRandom(faces);
+        curCustomer.attributes[5] = selectedImageAtt;
+        curCustomer.face.sprite = selectedImageAtt.Image;
 
-        i = UnityEngine.Random.Range(0, heads.Count);
-        curCustomer.attributes[6] = heads[i];
-        curCustomer.head.sprite = heads[i].Image;
+        selectedImageAtt = weightedRandom(heads);
+        curCustomer.attributes[6] = selectedImageAtt;
+        curCustomer.head.sprite = selectedImageAtt.Image;
 
-        i = UnityEngine.Random.Range(0, bodies.Count);
-        curCustomer.attributes[7] = bodies[i];
-        curCustomer.body.sprite = bodies[i].Image;
+        selectedImageAtt = weightedRandom(bodies);
+        curCustomer.attributes[7] = selectedImageAtt;
+        curCustomer.body.sprite = selectedImageAtt.Image;
+    }
+
+    private ImageAttribute weightedRandom(List<ImageAttribute> imageAttributes)
+    {
+        var attList = new List<Attribute>(imageAttributes.ToArray());
+        var att = weightedRandom(attList);
+
+        return att as ImageAttribute;
+    }
+
+    private Attribute weightedRandom(List<Attribute> attributes)
+    {
+        int totalWeight = 0;
+        foreach(var att in attributes)
+        {
+            totalWeight += att.weight;
+        }
+
+        int selectedValue = UnityEngine.Random.Range(0, totalWeight);
+        Attribute selectedAttribute = null;
+
+        foreach(var att in attributes)
+        {
+            if (selectedAttribute == null && selectedValue < att.weight)
+            {
+                selectedAttribute = att;
+            }
+            selectedValue -= att.weight;
+            att.weight++;
+        }
+
+        selectedAttribute.weight = 0;
+        return selectedAttribute;
     }
 
     public void customerRejected()

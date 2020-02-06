@@ -11,4 +11,5 @@ public class Attribute
     public float staminaValue=0;
     public float karmaValue=0;
     public string text="";
+    public int weight = 3;
 }
