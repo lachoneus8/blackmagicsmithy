@@ -3,7 +3,7 @@ woodcutter's axe;STAMINA+;
 suit of chainmail;STAMINA-;
 suit of plate mail;STAMINA-;
 wand of teleportation;MONEY+;
-warhammer. The King's warhammer;MONEY+;
+warhammer, the King's warhammer;MONEY+;
 belt of lost pouches;MONEY-;
 commoner's hammer;MONEY-;
 wand of the fairy queen;KARMA+;
