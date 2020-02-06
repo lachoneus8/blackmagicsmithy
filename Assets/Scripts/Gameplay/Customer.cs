@@ -75,7 +75,7 @@ public class Customer : MonoBehaviour
     internal string customerDesc()
     {
         //Reads like: A (adjective) (occupation) (personality) walks in. They place a (aura) (item) on the table
-        return attributes[0].text + " " + attributes[1].text + " " + attributes[2].text + " They place a " + attributes[4].text + " " + attributes[3].text + " on the table.";
+        return attributes[0].text + " " + attributes[1].text + " " + attributes[2].text + " They place a " + attributes[4].text + ", " + attributes[3].text + " on the table.";
     }
 }
 
