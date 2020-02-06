@@ -6,7 +6,7 @@ city senator;STAMINA-;
 soldier;STAMINA-;
 drunkard;STAMINA-;
 mortician;STAMINA-;
-Lord;MONEY+;
+noble;MONEY+;
 banker;MONEY+;
 goldsmith;MONEY+;
 merchant;MONEY+;
