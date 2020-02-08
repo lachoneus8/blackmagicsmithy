@@ -248,7 +248,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b657abaa582031943814c15694e7cc9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -609,285 +609,342 @@ MonoBehaviour:
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   jobs:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   personalities:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   faces:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: ebd250bb14c42ed489a909c7db89ef19, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: c6cd9bbfaf8fd574a952a777b1515873, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 3b3680db211bfaa48b9b6c4cb520ff51, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 4943db8b3a8a5a0449f854c48f51c28f, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: d668099acda61004dafa44338784cb40, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: b692f811875ace0488c85f517140f46a, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 5f54382c3f1881c48afa80a0ec850b68, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: fb4f1555847b2144aaef4d766284b30d, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 7ee4e9b4f37093f49a707de818aca714, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 3105090f486a5fd4f8c740d5e86639c0, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 05aba256c54035946b703e18ee2b25e3, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 2c6041997b07a57418ac03f12171b280, type: 3}
   heads:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 619b5def2aa6b6e4cad73b169512e711, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: e988db1f913bd094295c09efa6093500, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: aa29ad1c97e2c3b4c90a5b110e41f8c0, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: e8064b720cf16a5498db57d83cbe5404, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: f578281d10fd3f74c9f6c0afabec989a, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: b2177e3bee54be848a96c734b2d11384, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 30df64728ce02b841a7cf5bdc815f4d4, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: b38a941a66996e84fba960a2bbacf3ea, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 72ed0b06726257049aea4c17d3ffbde6, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 00a0bd4c34ecaae4f92e00257787f086, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 8a78f94e511498b418e9197de756f952, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 054ac0d37afc81f49bd1b8e47db21852, type: 3}
   bodies:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 97f0689c926805a4ba9a37dbfabd17b3, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 436c74b9abbd397409a309007d10f823, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 6259d9f66cc2d064997c1f24f8e37d39, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 5713e3cd56ca5f647ac3e9b4626858ba, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: d26089b727a6eec42aa2b60b9c32c27f, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 5f61755bb648f034ebf2ad6ebafca5ab, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 36fe5e6e2eff64d42b7c42d7700557cb, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: cf2c7286df856ac46ab0e98f31ace8f1, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 1b8578519af965044a9a2a277f55fe3c, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 46849872e58b1c644aa402c26dbe1179, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: b3c8d3987a1c9cc4eb1a7003cb69818a, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: f78abdafa6c20b44084c9195463924fe, type: 3}
   weapons:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: c5ef02ca42327d641aa74b60969ff9c6, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 884b6389db04f474e92a6ada4f7f2745, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 5ace5133b3efd024eb6a6287730800b9, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 5ace5133b3efd024eb6a6287730800b9, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 722661d850f8d854bb4c66dcd39703ac, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: ec8e1a18fc9b83e43925a4bc9786d1a4, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: a31cf61910cdfc64ebb5d59975eb6b0b, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: ec8e1a18fc9b83e43925a4bc9786d1a4, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 722661d850f8d854bb4c66dcd39703ac, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: c5ef02ca42327d641aa74b60969ff9c6, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: 884b6389db04f474e92a6ada4f7f2745, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
     Image: {fileID: 21300000, guid: a31cf61910cdfc64ebb5d59975eb6b0b, type: 3}
   auras:
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
+    weight: 3
   renderers:
   - {fileID: 5618677924310560333, guid: 81155da73159e1844b064e0fadaf7c28, type: 3}
   - {fileID: 1698279374001485104, guid: 1f98f1ffef133df469da6045365fb0c6, type: 3}
@@ -1549,7 +1606,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: 2f53c979b493d614faa8d6911ec5aaf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
