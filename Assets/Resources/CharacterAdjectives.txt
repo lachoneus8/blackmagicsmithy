@@ -1,4 +1,4 @@
-A great-hearted;STAMINA+;
+A great hearted;STAMINA+;
 A lively;STAMINA+;
 A festive;STAMINA+;
 A steely-eyed;STAMINA-;
