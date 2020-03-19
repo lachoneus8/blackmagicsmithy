@@ -37,6 +37,8 @@ public class GameController : MonoBehaviour
     public List<string> tooGood;
     public List<string> tooStressed;
     public List<string> tooRelaxed;
+
+    
     // Use this for initialization
     void Start()
     {
@@ -117,18 +119,62 @@ public class GameController : MonoBehaviour
 
     public void customerRejected()
     {
-        curKarma -= curCustomer.karmaValue(false);
-        curGold -= curCustomer.goldValue(false);
-        curStamina -= curCustomer.staminaValue(false);
+       var gold = curCustomer.goldValue();
+        var karma= curCustomer.karmaValue();
+        var stamina= curCustomer.staminaValue();
+        var val = Math.Min(Math.Max(gold, stamina), karma);
+
+        curKarma -= karma;
+        curGold -= gold;
+        curStamina -= stamina;
+
+        if (val == gold)
+        {
+            //change gold text
+        }
+        else if (val == karma)
+        {
+            //change karma text
+        }
+        else if (val == stamina)
+        {
+            //change stamina text
+        }
+        else
+        {
+            //no change text
+        }
 
         StartCoroutine(nextCustomer());
     }
 
     public void customerAccepted()
     {
-        curKarma += curCustomer.karmaValue(true);
-        curGold += curCustomer.goldValue(true);
-        curStamina += curCustomer.staminaValue(true);
+        var gold = curCustomer.goldValue();
+        var karma = curCustomer.karmaValue();
+        var stamina = curCustomer.staminaValue();
+        var val = Math.Max(Math.Max(gold, stamina), karma);
+
+        curKarma += karma;
+        curGold += gold;
+        curStamina += stamina;
+
+        if (val == gold)
+        {
+            //gain gold text
+        }
+        else if (val == karma)
+        {
+            //gain karma text
+        }
+        else if (val == stamina)
+        {
+            //gain stamina text
+        }
+        else
+        {
+            //no change text
+        }
 
         StartCoroutine(nextCustomer());
     }

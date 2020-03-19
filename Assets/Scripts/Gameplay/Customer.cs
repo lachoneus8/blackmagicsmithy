@@ -37,7 +37,7 @@ public class Customer : MonoBehaviour
         yield return new WaitForSeconds(.4f);
     }
 
-    public float karmaValue(bool repaired)
+    public float karmaValue()
     {
         float value = 0;
         foreach(var attribute in attributes)
@@ -47,7 +47,7 @@ public class Customer : MonoBehaviour
         return value;
     }
 
-    public float goldValue(bool repaired)
+    public float goldValue()
     {
         float value = 0;
         foreach (var attribute in attributes)
@@ -57,7 +57,7 @@ public class Customer : MonoBehaviour
         return value;
     }
 
-    public float staminaValue(bool repaired)
+    public float staminaValue()
     {
         float value = 0;
         foreach (var attribute in attributes)
