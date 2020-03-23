@@ -30,4 +30,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("HowToPlay");
     }
+
+    public void OnExit()
+    {
+        Application.Quit();
+    }
 }
