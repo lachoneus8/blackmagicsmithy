@@ -17,8 +17,8 @@ public class Credits : MonoBehaviour
         
     }
 
-    public void onExit()
+    public void onExit(string scene)
     {
-        SceneManager.LoadScene("Startup");
+        SceneManager.LoadScene(scene);
     }
 }
