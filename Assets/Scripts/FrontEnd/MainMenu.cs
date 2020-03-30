@@ -20,16 +20,12 @@ public class MainMenu : MonoBehaviour
 
     public void onPlay()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("HowToPlay");
     }
 
     public void onCredits()
     {
         SceneManager.LoadScene("Credits");
-    }
-    public void onHowToPlay()
-    {
-        SceneManager.LoadScene("HowToPlay");
     }
 
     public void OnExit()
