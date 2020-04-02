@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
+    public string curScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class Credits : MonoBehaviour
 
     public void onExit(string scene)
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(curScene));
     }
 }

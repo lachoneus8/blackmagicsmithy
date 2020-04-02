@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+    public PlayerStats stats;
     // Start is called before the first frame update
     void Start()
     {
-        
+        stats = (PlayerStats)FindObjectOfType(typeof(PlayerStats));
     }
 
     // Update is called once per frame
@@ -20,14 +20,21 @@ public class MainMenu : MonoBehaviour
 
     public void onPlay()
     {
-        SceneManager.LoadScene("HowToPlay");
+        if (stats.introSeen)
+        {
+            SceneLoad("Gameplay");
+        }
+        else
+        {
+            SceneLoad("HowToPlay");
+            stats.introSeen = true;
+        }
     }
-
-    public void onCredits()
+    public void SceneLoad(string name)
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene(name, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Startup");
     }
-
     public void OnExit()
     {
         Application.Quit();

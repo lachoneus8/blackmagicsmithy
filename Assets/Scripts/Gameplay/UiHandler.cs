@@ -49,7 +49,8 @@ public class UiHandler : MonoBehaviour
 
     public void onExit()
     {
-        SceneManager.LoadScene("Startup");
+        SceneManager.LoadScene("Startup",LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Gameplay");
     }
 
     public void setButtonsEnabled(bool enabled)
