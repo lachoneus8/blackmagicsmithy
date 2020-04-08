@@ -865,7 +865,7 @@ MonoBehaviour:
     karmaValue: 0
     text: 
     weight: 3
-    Image: {fileID: 21300000, guid: 5ace5133b3efd024eb6a6287730800b9, type: 3}
+    Image: {fileID: 21300000, guid: fec746c28bf487a4591d125e249b80aa, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
@@ -883,37 +883,37 @@ MonoBehaviour:
     karmaValue: 0
     text: 
     weight: 3
-    Image: {fileID: 21300000, guid: a31cf61910cdfc64ebb5d59975eb6b0b, type: 3}
+    Image: {fileID: 21300000, guid: d13b33b25750fb24b9df16c42c93333e, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
     weight: 3
-    Image: {fileID: 21300000, guid: ec8e1a18fc9b83e43925a4bc9786d1a4, type: 3}
-  - goldValue: 0
-    staminaValue: 0
-    karmaValue: 0
-    text: 
-    weight: 3
-    Image: {fileID: 21300000, guid: 722661d850f8d854bb4c66dcd39703ac, type: 3}
-  - goldValue: 0
-    staminaValue: 0
-    karmaValue: 0
-    text: 
-    weight: 3
-    Image: {fileID: 21300000, guid: c5ef02ca42327d641aa74b60969ff9c6, type: 3}
-  - goldValue: 0
-    staminaValue: 0
-    karmaValue: 0
-    text: 
-    weight: 3
-    Image: {fileID: 21300000, guid: 884b6389db04f474e92a6ada4f7f2745, type: 3}
+    Image: {fileID: 21300000, guid: e54788decc84e4641a7e79bdc5440c7e, type: 3}
   - goldValue: 0
     staminaValue: 0
     karmaValue: 0
     text: 
     weight: 3
     Image: {fileID: 21300000, guid: a31cf61910cdfc64ebb5d59975eb6b0b, type: 3}
+  - goldValue: 0
+    staminaValue: 0
+    karmaValue: 0
+    text: 
+    weight: 3
+    Image: {fileID: 21300000, guid: a897256e123f742488c6473ca2b6a871, type: 3}
+  - goldValue: 0
+    staminaValue: 0
+    karmaValue: 0
+    text: 
+    weight: 3
+    Image: {fileID: 21300000, guid: 2b5140d6986945f4b993227fbc78ddae, type: 3}
+  - goldValue: 0
+    staminaValue: 0
+    karmaValue: 0
+    text: 
+    weight: 3
+    Image: {fileID: 21300000, guid: d3d015cc42ff6214e8268d8e9e5fdc51, type: 3}
   auras:
   - goldValue: 0
     staminaValue: 0
