@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     public Text deathText;
     public Text WinText;
     public Text scoreText;
+    public Text changeText;
 
     public List<Attribute> adjectives;
     public List<Attribute> jobs;
@@ -122,7 +123,7 @@ public class GameController : MonoBehaviour
        var gold = curCustomer.goldValue();
         var karma= curCustomer.karmaValue();
         var stamina= curCustomer.staminaValue();
-        var val = Math.Min(Math.Max(gold, stamina), karma);
+        var val = Math.Max(Math.Max(Math.Abs(gold), Math.Abs(stamina)), Math.Abs(karma));
 
         curKarma -= karma;
         curGold -= gold;
@@ -130,19 +131,19 @@ public class GameController : MonoBehaviour
 
         if (val == gold)
         {
-            //change gold text
+            changeText.text = "Biggest change: Gold";
         }
         else if (val == karma)
         {
-            //change karma text
+            changeText.text = "Biggest change: Karma";
         }
         else if (val == stamina)
         {
-            //change stamina text
+            changeText.text = "Biggest change: Stamina";
         }
         else
         {
-            //no change text
+            changeText.text = "Nothing changed the most";
         }
 
         StartCoroutine(nextCustomer());
@@ -153,7 +154,7 @@ public class GameController : MonoBehaviour
         var gold = curCustomer.goldValue();
         var karma = curCustomer.karmaValue();
         var stamina = curCustomer.staminaValue();
-        var val = Math.Max(Math.Max(gold, stamina), karma);
+        var val = Math.Max(Math.Max(Math.Abs(gold), Math.Abs(stamina)), Math.Abs(karma));
 
         curKarma += karma;
         curGold += gold;
@@ -161,19 +162,19 @@ public class GameController : MonoBehaviour
 
         if (val == gold)
         {
-            //gain gold text
+            changeText.text = "Biggest change: Gold";
         }
         else if (val == karma)
         {
-            //gain karma text
+            changeText.text = "Biggest change: Karma";
         }
         else if (val == stamina)
         {
-            //gain stamina text
+            changeText.text = "Biggest change: Stamina";
         }
         else
         {
-            //no change text
+            changeText.text = "Nothing changed the most";
         }
 
         StartCoroutine(nextCustomer());
