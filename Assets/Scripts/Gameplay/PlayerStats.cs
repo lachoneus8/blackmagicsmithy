@@ -11,6 +11,11 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.DeleteAll();//<-REMOVE BEFORE RELEASE
+        Debug.Log("gameOpened: "+PlayerPrefs.GetInt(keyNames[(int)keys.gameOpened], 0));
+        Debug.Log("introSeen: "+PlayerPrefs.GetInt(keyNames[(int)keys.introSeen], 0));
+        Debug.Log("highScore: "+PlayerPrefs.GetInt(keyNames[(int)keys.highScore], 0));
+
         if (PlayerPrefs.GetInt(keyNames[(int)keys.gameOpened], 0) == 0)
         {
             PlayerPrefs.SetInt(keyNames[(int)keys.gameOpened], 1);
@@ -31,7 +36,6 @@ public class PlayerStats : MonoBehaviour
                 introSeen = true;
             }
         }
-
         if (SceneManager.sceneCount==1)
         {
             SceneManager.LoadScene("Startup", LoadSceneMode.Additive);

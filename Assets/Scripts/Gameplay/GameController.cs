@@ -39,10 +39,12 @@ public class GameController : MonoBehaviour
     public List<string> tooStressed;
     public List<string> tooRelaxed;
 
-    
+    PlayerStats stats;
+
     // Use this for initialization
     void Start()
     {
+        stats = (PlayerStats)FindObjectOfType(typeof(PlayerStats));
         StartCoroutine(nextCustomer());
     }
 
@@ -211,8 +213,13 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            //increase score & update text/highScore
             score++;
             scoreText.text = "" + score;
+            if (score > stats.highScore)
+            {
+                stats.highScore = score;
+            }
             //winning
             if (score >= 30)
             {
