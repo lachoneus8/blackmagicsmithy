@@ -156,3 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   introSeen: 0
+  highScore: 0
+  keyNames:
+  - gameOpened
+  - highScore
+  - introSeen
