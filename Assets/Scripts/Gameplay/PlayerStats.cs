@@ -11,16 +11,10 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();//<-REMOVE BEFORE RELEASE
-        Debug.Log("gameOpened: "+PlayerPrefs.GetInt(keyNames[(int)keys.gameOpened], 0));
-        Debug.Log("introSeen: "+PlayerPrefs.GetInt(keyNames[(int)keys.introSeen], 0));
-        Debug.Log("highScore: "+PlayerPrefs.GetInt(keyNames[(int)keys.highScore], 0));
-
+        
         if (PlayerPrefs.GetInt(keyNames[(int)keys.gameOpened], 0) == 0)
         {
-            PlayerPrefs.SetInt(keyNames[(int)keys.gameOpened], 1);
-            PlayerPrefs.SetInt(keyNames[(int)keys.introSeen], 0);
-            PlayerPrefs.SetInt(keyNames[(int)keys.highScore], 0);
+            ResetStats();
         }
         else
         {
@@ -41,6 +35,14 @@ public class PlayerStats : MonoBehaviour
             SceneManager.LoadScene("Startup", LoadSceneMode.Additive);
         }
     }
+
+    public void ResetStats()
+    {
+        PlayerPrefs.SetInt(keyNames[(int)keys.gameOpened], 1);
+        PlayerPrefs.SetInt(keyNames[(int)keys.introSeen], 0);
+        PlayerPrefs.SetInt(keyNames[(int)keys.highScore], 0);
+    }
+
     private void OnApplicationQuit()
     {
         PlayerPrefs.SetInt(keyNames[(int)keys.highScore], highScore);
@@ -54,6 +56,7 @@ public class PlayerStats : MonoBehaviour
         }
         PlayerPrefs.Save();
     }
+
     //Use with the KeyNames list
     enum keys
     {
